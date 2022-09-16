@@ -126,6 +126,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function () {
+  console.log('Welcome to forkify app!');
+};
+
 const init = function () {
   BookmarksView.addHandlerForRender(initializeBookmarks);
   RecipeView.addHandlerForRender(controlRecipes);
@@ -134,5 +138,6 @@ const init = function () {
   SearchView.addHandlerForSearch(controlSearchResults);
   PaginationView.addHandlerForClick(controlPagination);
   AddRecipeView.addHandlerForUpload(controlAddRecipe);
+  newFeature();
 };
 init();
